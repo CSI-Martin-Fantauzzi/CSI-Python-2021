@@ -135,19 +135,19 @@ https://www.markdownguide.org/getting-started/
 
 What does "cd" stand for?
 
- - Answer:
+ - Answer: It stands for change directory.
 
 Did you get stuck at any point or become confused with your console? (yes/no) If so, what happened? How did you solve it?
 
- - Answer:
+ - Answer: No.
 
 Did you consider searching google for other commands to run? What did you try? 
 
- - Answer:
+ - Answer: Yes. I tried to run a textwrap command. 
 
 What would you like to program? 
 
- - Answer:
+ - Answer: A program that can find words or phrases that I choose in a website. 
 
 Type down any class notes below this sentence:
 
