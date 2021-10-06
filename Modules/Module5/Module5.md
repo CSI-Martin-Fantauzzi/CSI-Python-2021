@@ -82,8 +82,25 @@ Give a python example for each logic operator in the module image.
 
  - Answers:
    - OR:
-   - AND: 
+
+XYZ = 341
+if (XYZ > 0 or XYZ < 300)
+  print("XYZ is greater than 0.")
+else ("XYZ is smaller than its value.")
+
+
+
+   - AND:
+
+V = 31
+if( v < 32 and x > 30 ):
+  print("You have found the value of x.")
+
    - NOT: 
+
+J = 20
+if not( J > 10 and J < 30 ):
+  print("Your value of x is 20.")
 
 
 Type down any class notes below this sentence:
