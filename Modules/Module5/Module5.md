@@ -100,7 +100,7 @@ if( v < 32 and x > 30 ):
 
 J = 20
 if not( J > 10 and J < 30 ):
-  print("Your value of x is 20.")
+  print("Your value of J is 20.")
 
 
 Type down any class notes below this sentence:
