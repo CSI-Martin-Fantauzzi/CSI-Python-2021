@@ -6,7 +6,7 @@
 </div>
 <br>
 
-# Calculate the distance traveled by a projectile `(70pts)`
+# Calculate the distance traveled by a projectile `(100pts)`
 
 <!-- ## [Select a projectile weapon](https://www.giantbomb.com/profile/phatcat/lists/modern-military-weapons/27505/) -->
 ## [Select a projectile weapon.](https://escapefromtarkov.fandom.com/wiki/Weapons)`(5pts)`
@@ -28,13 +28,12 @@
 <br>
 
 ## Gather data for your experiment. `(10pts)`
-* Create a file using the following convention `Name-Lastname-Projectile.py`
+* Create a file using the following convention `Projectile-Motion.py`
 * [Use this website to review projectile motion. Example 1 will help.](https://www.khanacademy.org/science/physics/two-dimensional-motion/two-dimensional-projectile-mot/a/what-is-2d-projectile-motion) 
 * Determine how far will your projectile go if was fired straight (angle of 0 degrees).
   * Assume no air resistance.
-  * Solve for time using your initial height and horizontal velocity.
   * Your script must Calculate the time (t) and distance traveled (delta X).
-* Your script must be fully documented (`// Inline documentation at every step`).
+* Your script must be fully documented (`# Inline documentation at every step`).
 
 <br>
 
@@ -50,8 +49,28 @@
 
 <br>
 
-## Convert your script parameters into a single JSON Object `(10pts)`
-* Convert all tha variables you have created into parameters. 
+## Convert your script parameters into a single JSON Object `(5pts)`
+* Change your experimental function to receive a single object as a parameter.
+  * call your object `experimentalData`
+  * Update your function variable references to use this object. eg. `experimentalData.velocity_ms`
+
+<br>
+
+## Create a Python Class  `(15pts)`
+* Comment out your `experimentalData` object 
+  * Highlight section and press `CTRL + /`
+* Create a file and class named `ExperimentalData`
+* Convert your JSON Object into parameters for the class.
+* Use a Constructor on your experiment. It should be similar to your original function parameter list.
+  * Make sure your first parameter is `self`.
+  * Store all parameter values to self.
+* Construct your object in `Projectile-Motion.py` and use it as your parameter object for your function.  
+  * Add an import to your class. 
+    * `from ExperimentalData import ExperimentalData`
+  * Modify your function references to use the values from this object.
+
+  * Specify the data type of your function to be `ExperimentalData`
+  * Update your function`s variable references.
 
 <br>
 
@@ -59,6 +78,18 @@
 
 <br>
 
+## Externalize your JSON `(10pts)`
+* Create a file called `Projectile-Motion.json`
+* Migrate all of your configurations into this JSON file.
+  * Use a list
+
+<br>
+
+## Write a For-Loop `(10pts)`
+* Iterate over your JSON List. 
+* Call the previously defined function on each iteration. 
+
+<br>
 
 ## Add the option to run the calculation on another planet.`(10pts)`
 * Recall from `Planets.py`
@@ -74,17 +105,12 @@ planet = planets.index(input("Planet Name: "))
 g_ms2[planet]
 
 ```
-
+* Update your object class.
+* Update your JSON
 
 <br>
 
-
-
-
-
-
-
-After you finish, take a screenshot of the terminal and name it using the following convention: `Name-Lastname-Projectile.png`
+After you finish, take a screenshot of the terminal and name it using the following convention: `Projectile-Motion.png`
 
 
 <!-- | Planet | Gravitational Acceleration (m/s^2) | 
