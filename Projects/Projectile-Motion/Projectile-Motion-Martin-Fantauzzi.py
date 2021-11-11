@@ -49,6 +49,7 @@ for data in myDataSet:
     print('\n-------------------------------------------------------\n')
     ProjectileFunction(data)
 
+# serialization
 myOutputPath = Path(__file__).parents[0]
 myOutputFilePath = os.path.join(myOutputPath, 'Projectile.Motion.json')
 
