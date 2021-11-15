@@ -85,19 +85,28 @@ What does JSON Stand for?
 
 Why are JSON formats important?
 
- - Answer: a JSON encodes and organizes objects into a string.
+ - Answer: A JSON encodes and organizes objects into a string.
 
 Create an example of a JSON object with at least 4 values. It may represent anything but it must be original.
 
- - Answer:
+ - Answer: 
+
+
+Shirts:[
+     "White Shirt" : "Cotton Material", 
+     "Yellow Shirt" : "Striped Pattern",
+     "Green Shirt" : "Dry-Fit",
+     "Black Shirt" : "Long-Sleeve"
+   ]
 
 What is the difference between serialization and deserialization?
 
- - Answer:
+ - Answer: Serialization means to convert an object into a string representing an object, and deserialization is its inverse operation. 
 
 Research data persistance. What did you find?
 
- - Answer: 
+ - Answer: Data persistence is the continuance of an effect after its cause is removed. In the context of storing data in a computer system, this means that the data survives after the process with which it was created has ended.
+
 
 Type down any class notes below this sentence:
 
