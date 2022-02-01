@@ -18,7 +18,7 @@ def play(word):
     print(word_completion)
     print("\n")
     while not guessed and tries >0:
-        guess = input("Guess a letter or word ").upper()
+        guess = input("Guess a letter: ").upper()
         if len(guess) == 1 and guess.isalpha():
             if guess in guessed_letters:
                 print("You already tried", guess, "!")
@@ -44,11 +44,13 @@ def play(word):
                 tries -= 1
                 guessed_words.append(guess)
             else:
-                print("Invalid input")
-            print(display_hangman(tries))
-            print(word_completion)
-            print("\n")
-
+                guessed = True
+                word_completion = word
+        else:
+            print("Invalid input")
+        print(display_hangman(tries))
+        print(word_completion)
+        print("\n")
     if guessed:
         print("Success! You got it right!")
     else:
@@ -62,8 +64,8 @@ def display_hangman(tries):
        |      |
        |      |   
        |      O
-       |     /|\
-       |     / \
+       |     /|\\
+       |     / \\
       ---
       """,
       """
@@ -71,7 +73,7 @@ def display_hangman(tries):
        |      |
        |      |   
        |      O
-       |     /|\
+       |     /|\\
        |     / 
       ---
        """,
@@ -80,7 +82,7 @@ def display_hangman(tries):
        |      |
        |      |   
        |      O
-       |     /|\
+       |     /|\\
        |      
       ---
       """,
