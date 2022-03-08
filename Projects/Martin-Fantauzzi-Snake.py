@@ -27,6 +27,10 @@ def my_snake(snake_block, snake_list):
     for x in snake_list:
         pygame.draw.rect(dis,orange, [x[0], x[1], snake_block, snake_block])
 
+def the_score(score):
+    value = font_style.render("Score: " + str(score), True, reddish)
+    dis.blit(value, [0,0])
+
 def message(msg, color):
     mesg = font_style.render(msg, True, color)
     dis.blit(mesg, [dis_width/4.1, dis_height/2])
@@ -51,6 +55,7 @@ def gameLoop():
         while game_close == True:
             dis.fill(maroon)
             message('''YOU DIED. Press Q to quit and P to play again.''', red)
+            the_score(length_of_snake -1)
             pygame.display.update()
 
             for event in pygame.event.get():
@@ -97,6 +102,7 @@ def gameLoop():
                 game_close == True
 
         my_snake(snake_block, snake_List)
+        the_score(length_of_snake -1)
 
         pygame.display.update()
 
